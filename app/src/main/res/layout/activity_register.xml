@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlosearch"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    tools:context=".RegisterAcivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinput_name"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="221dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/nameRegistration"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinput_surname"
+        android:layout_width="350dp"
+        android:layout_height="53dp"
+        app:errorEnabled="true">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/surnameEditText"
+            android:layout_width="222dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="117dp"
+            android:ems="10"
+            android:hint="@string/surnameRegistration"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinput_email"
+        android:layout_width="350dp"
+        android:layout_height="53dp"
+        app:errorEnabled="true">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="222dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="117dp"
+            android:ems="10"
+            android:hint="@string/emailRegistration"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinput_password"
+        android:layout_width="236dp"
+        android:layout_height="79dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="222dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/emailEditText"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/passwordRegistration"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinput_nationality"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nationalityEditText"
+            android:layout_width="222dp"
+            android:layout_height="43dp"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:hint="@string/natioanlityRegistration"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinput_phone"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="222dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/nationalityEditText"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinput_birtdate"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/birthdateEditText"
+            android:layout_width="222dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/phoneEditText"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/birthdate_dd_mm_yyyyRegistration"
+            android:inputType="date"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/maleMadioButton"
+            android:layout_width="351dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="@string/maleRegistration" />
+
+        <RadioButton
+            android:id="@+id/femaleRdioButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="@string/femaleRegistration" />
+    </RadioGroup>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/RegistNow"
+        android:layout_width="253dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="34dp"
+        app:cardBackgroundColor="@android:color/holo_blue_light"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/finalRegisterTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="79dp"
+                android:layout_marginStart="79dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/register_nowButton"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
