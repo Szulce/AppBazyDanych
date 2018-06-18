@@ -25,6 +25,7 @@
             android:layout_marginTop="32dp"
             android:ems="10"
             android:hint="@string/nameRegistration"
+            android:singleLine="true"
             android:inputType="textPersonName"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
@@ -45,6 +46,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="117dp"
             android:ems="10"
+            android:singleLine="true"
             android:hint="@string/surnameRegistration"
             android:inputType="textPersonName"
             android:textSize="14sp" />
@@ -65,6 +67,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="117dp"
             android:ems="10"
+            android:singleLine="true"
             android:hint="@string/emailRegistration"
             android:inputType="textEmailAddress"
             android:textSize="14sp" />
@@ -87,6 +90,7 @@
             android:layout_centerHorizontal="true"
             android:ems="10"
             android:hint="@string/passwordRegistration"
+            android:singleLine="true"
             android:inputType="textPassword"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
@@ -103,6 +107,7 @@
             android:layout_height="43dp"
             android:layout_centerInParent="true"
             android:ems="10"
+            android:singleLine="true"
             android:hint="@string/natioanlityRegistration"
             android:inputType="textPersonName"
             android:textSize="14sp" />
@@ -122,6 +127,7 @@
             android:layout_below="@+id/nationalityEditText"
             android:layout_centerHorizontal="true"
             android:ems="10"
+            android:singleLine="true"
             android:hint="Phone number"
             android:inputType="phone"
             android:textSize="14sp" />
@@ -140,7 +146,8 @@
             android:layout_below="@+id/phoneEditText"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:hint="@string/birthdate_dd_mm_yyyyRegistration"
+            android:singleLine="true"
+            android:hint="Birthdate YYYY-MM-DD"
             android:inputType="date"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
